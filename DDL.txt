@@ -1,0 +1,17 @@
+//enter the container with the exec command in docker(bash)
+// run /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P ';?&:J6qz4jP?AzH'
+
+// see available databases
+//select name from sys.Databases 
+
+create database testDB
+go
+
+use testDB
+
+use testDB
+create table users (id INT, name NVARCHAR(50), email NVARCHAR(255));
+go
+
+insert into users values(1, 'Bill Gates', 'bill.gates@microsoft.com');
+go
